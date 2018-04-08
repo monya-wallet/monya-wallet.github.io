@@ -31,6 +31,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
     <script>
+      
       function iosAlert(){
       window.alert("App Storeからダウンロードするとできること\n\
       ・monacoin:リンクを押して開けること\n\
@@ -70,6 +71,12 @@
     </script>
   </head>
   <body>
+    <div style="width:100%;padding:10%;text-align:center" id="eng">
+      <a href="index_en.html" style="color:black;font-size:xx-large;">English Version</a>
+    </div>
+    <script>
+      if(~navigator.language.toLowerCase().indexOf("ja")){document.getElementById("#eng").style.display="none"}
+    </script>
     <!-- Start Header -->
     <header id="mu-header" class="" role="banner">
       <div class="mu-header-overlay">
@@ -158,7 +165,7 @@
               <a href="#mu-contact">お問い合わせ</a>
             </li>
             <li>
-              <a href="index_en.html">English</a>
+              <a href="index_en.html" onclick="location.href='index_en.html'">English</a>
             </li>
           </ul>
         </nav>
