@@ -33,40 +33,12 @@
     <script>
       
       function iosAlert(){
-      window.alert("App Storeからダウンロードするとできること\n\
-      ・monacoin:リンクを押して開けること\n\
-      ・Touch ID/Face ID\n\n")
-      window.alert("もにゃをSafariで使うとできること:\n\
-      ・BitZeny, Neetcoinなどの多様な通貨\n\
-      ・最新技術「Segwit」を使った送金\n\
-      ・カウンターパーティーでトークンエコノミーの体験\n\
-      ・モナカードでミスモナコインカードをはじめとしたカードの投げ合い\n\
-      ・Monappy受け取りQRコードの作成\n\
-      ・可愛い決済音\n\
-      ・次世代の取引「アトミックスワップ」\n\
-      ・ヘルプ/豆知識を無制限に読める")
-      window.alert("Android版はWeb版の機能に加えて\n\
-      ・高速なQRコードリーダー\n\
-      ・NFC対応スマホなら素早く送金\n\
-      ・送金リンクを押して素早く送金\n\
-      ・指紋認証\n\
-      ・Zaif Paymentで相場変動を気にせず決済（サーバーリスクは健在）")
       
-      if(window.confirm("誤解されているっぽいこと\n\
-      ・セキュリティレベルはWebでもアプリでも一緒\n\
-      ・ストアアプリ版よりWeb版の方がデータサイズが小さい\n\
-      ・App Storeの偽アプリに釣られる可能性がとても高いこと\n\
-      アプリをホームに追加します。キャンセルでApp Storeに遷移します\n\
-      ")){
-      location.href="https://monya-wallet.github.io/もにゃ.mobileconfig"
-      }else{
-      window.alert("App Storeの偽アプリにご注意ください！\n\n一旦対象の暗号通貨がストアに登場したら最後、偽アプリの脅威からは逃れられません。MyEtherWallet, KuCoinなどが偽アプリの被害を受けております。そして、もにゃも例外ではありません。もにゃを騙るアプリにご注意ください。ちなみに、アップルは暗号通貨アプリ第一号には規定されたあらゆるルールを行使して拒否しようとしますが、そのあとはほぼノーパスです。たとえバックドア、マルウェアが含まれていたとしてもです。")
-      if(window.confirm("無関係のネット広告のGoogle Playアイコンにすらいちゃもんをつけられる審査によりヘルプ、寄付を消しました。アプリをインストールする前に寄付を行います")){
-      location.href="https://missmonacoin.github.io"
-      }else{
+      
+      if(window.confirm("Wanna unlock all features?")){
+      alert('After installing,  tap "Unlock All features" at the bottom of this webpage. Then you'll find a lot of fantastic functions!')
+      }
       location.href="https://itunes.apple.com/jp/app/もにゃ/id1343780009"
-      }
-      }
       }
     </script>
   </head>
@@ -722,7 +694,10 @@
           </p>
           <li>
               <a href="index_en.html">English</a>
-            </li>
+          </li>
+          <li>
+            <a href="monacoin:api_v1_enableExtendedMode">Unlock All Features</a>
+          </li>
         </div>
       </div>
 
