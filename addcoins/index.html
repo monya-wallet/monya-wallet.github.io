@@ -15,6 +15,7 @@
     <p>Second, Select a coin which you want to add.</p>
     <select id="cn" name="cn">
       <option value="">Please Select</option>
+      <option value="yaju">YajuCoin</option>
       <option value="xp">ExperiencePoints</option>
       <option value="neet">Neetcoin Old private key</option>
     </select>
@@ -22,6 +23,32 @@
     <textarea cols="30" id="imp" name="imp" rows="10"></textarea>
     <script>
       var coinData = {
+      "yaju":{
+    coinScreenName: "Yajucoin",
+    coinId: "yaju",
+    unit: "YAJU",
+    unitEasy: "¥",
+    bip44: {
+      coinType: 2005,
+      account: 0
+    },
+    bip21: "yajucoin",
+    defaultFeeSatPerByte: 50,
+    apiEndpoints:[{url:"https://yaju.insight.monacoin.ml/api",explorer:"https://yaju.insight.monacoin.ml"}],
+    network: {
+      messagePrefix: '\x19YAJUCOIN Signed Message:\n',
+      bip32: {
+        public: 0x0488b21e,
+        private: 0x0488ade4
+      },
+      pubKeyHash: 78,
+      scriptHash: 85, // n
+      wif: 206
+    },
+    enableSegwit: false,
+    lib: "blk",
+    opReturnLength:0,isAtomicSwapAvailable:false
+  },
       "neet":{
     coinScreenName: "NeetCoin",
     coinId: "neet",
