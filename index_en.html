@@ -1,13 +1,16 @@
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8"></meta>
+<html dir="ltr">
+	<head>
+		<meta charset="utf-8"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"></meta>
+		<link rel="stylesheet" href="assets/css/main.css"></link>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></link></noscript>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Monya - Digital wallet that you can play with cards</title>
+    <title>Monya - All in one Wallet</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="https://monya-wallet.github.io/assets/images/favicon.ico"></link>
-    <link rel="apple-touch-icon" href="https://monya-wallet.github.io/assets/images/apple-touch-icon180.png" sizes="180x180"></link>
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"></link>
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon180.png" sizes="180x180"></link>
     <!-- Open Graph Protocol-->
     <meta property="og:site_name" content="もにゃ - カードで遊べるデジタル財布"></meta>
     <meta property="og:title" content="もにゃ - カードで遊べるデジタル財布"></meta>
@@ -18,17 +21,8 @@
     <meta name="twitter:card" content="summary"></meta>
     <meta name="twitter:site" content="https://monya-wallet.github.io/"></meta>
     <meta name="twitter:image" content="https://monya-wallet.github.io/assets/images/apple-touch-icon180.png"></meta>
-    <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"></link>
-    <!-- Bootstrap -->
-    <link href="https://monya-wallet.github.io/assets/css/bootstrap.min.css" rel="stylesheet"></link>
-    <!-- Slick slider -->
-    <link href="https://monya-wallet.github.io/assets/css/slick.css" rel="stylesheet"></link>
-    <!-- Theme color -->
-    <link id="switcher" href="https://monya-wallet.github.io/assets/css/theme-color/default-theme.css" rel="stylesheet"></link>
-    <link href="https://monya-wallet.github.io/style.css" rel="stylesheet"></link>
-
-    <link href="asset?aid=5" rel="stylesheet"></link>
+    
+    <link rel="alternate" href="https://monya-wallet.github.io/index_en.html" hreflang="en"></link>
     <script>
       
       function iosAlert(){
@@ -40,635 +34,309 @@
       location.href="https://itunes.apple.com/jp/app/もにゃ/id1343780009"
       }
     </script>
-  </head>
-  <body dir="ltr">
-    <div style="width:100%;padding:6%;text-align:center;display:none;" id="eng">
-      <a href="index.html" style="color:black;font-size:xx-large;">日本語版</a>
-    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-114748969-2" async=""></script>
     <script>
-      if(~navigator.language.toLowerCase().indexOf("ja")){document.getElementById("eng").style.display="block"}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114748969-2');
     </script>
-    <!-- Start Header -->
-    <header id="mu-header" class="" role="banner">
-      <div class="mu-header-overlay">
-        <div class="container">
-          <div class="mu-header-area">
 
-            <!-- Start Logo -->
-            <div class="mu-logo-area">
-              <a class="mu-logo" href="https://monya-wallet.github.io/#">Monya</a>
-            </div>
-            <!-- End Logo -->
+	</head>
+	<body class="is-preload" dir="ltr">
 
-            <!-- Start header featured area -->
-            <div class="mu-header-featured-area">
-              <div class="mu-header-featured-img">
-                <img src="https://monya-wallet.github.io/assets/images/favicon_512.png" alt="iphone image">
-              </div>
-
-              <div class="mu-header-featured-content">
-                <h1>Monya</h1>
-                <p>Monacoin, BitZeny compatible!
-                  <br> It is a crypto currency (virtual currency) wallet that can be satisfied from beginners to advanced users
-                </p>
-
-                <div class="mu-app-download-area">
-                  <h4>Download Now</h4>
-                  <a class="mu-web-btn" href="https://monya-wallet.github.io/wallet/" style="padding:20px 80px;border-radius:10px">
-                    <i class="fa fa-globe"></i> <span>Browser version</span>
-                  </a>
-                  <br>
-                  <a href="https://play.google.com/store/apps/details?id=org.missmonacoin.monya">
-                    <img alt="Get it on Google Play" src="https://play.google.com/intl/ja/badges/images/generic/ja_badge_web_generic.png" width="300px">
-                  </a>
-                  <a href="https://monya-wallet.github.io/#" onclick="iosAlert()">
-                    <img alt="Download from the App Store" src="https://monya-wallet.github.io/assets/images/home.png" width="220px">
-                  </a>
-                  <br>
-
-                  <a class="mu-src-btn" href="https://github.com/monya-wallet/monya">
-                    <i class="fa fa-github"></i> <span>Source code</span>
-                  </a>
-                  <a class="mu-src-btn" href="https://chrome.google.com/webstore/detail/%E3%82%82%E3%81%AB%E3%82%83/lgiengglndmdhgdbdcknhgjnbefhnkio">
-                    <i class="fa fa-chrome"></i>
-                    <span>Chrome</span>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-            <!-- End header featured area -->
-
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- Start Menu -->
-    <button class="mu-menu-btn"></button>
-    <div class="mu-menu-full-overlay">
-      <div class="mu-menu-full-overlay-inner">
-        <a class="mu-menu-close-btn" href="https://monya-wallet.github.io/#">
-          <span class="mu-line"></span>
-        </a>
-        <nav class="mu-menu" role="navigation">
-          <ul>
-            <li>
-              <a href="https://monya-wallet.github.io/#mu-header">header</a>
-            </li>
-            <li>
-              <a href="https://monya-wallet.github.io/#mu-feature">Feature</a>
-            </li>
-
-            <li>
-              <a href="https://monya-wallet.github.io/#mu-apps-screenshot">Screenshots</a>
-            </li>
-            <li>
-              <a href="https://monya-wallet.github.io/#mu-download">Get an app</a>
-            </li>
-            <li>
-              <a href="https://monya-wallet.github.io/#mu-faq">FAQ</a>
-            </li>
-            <li>
-              <a href="https://monya-wallet.github.io/#mu-contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <!-- End Menu -->
+		<!-- Header -->
+		<header id="header">
+			<div class="content">
+				<h1><a href="#">Monya</a></h1>
+				<p><br>
+					All-in-one Crypto currency Wallet</p>
+				<ul class="actions">
+					<li><a href="https://monya-wallet.github.io/wallet/" class="button primary icon fa-arrow-right">Use it now</a></li>
+					<li><a href="https://github.com/monya-wallet/monya" class="button">Source code</a></li>
+          
+          <li><a href="https://chrome.google.com/webstore/detail/%E3%82%82%E3%81%AB%E3%82%83/lgiengglndmdhgdbdcknhgjnbefhnkio" class="button icon fa-chrome">Chrome</a></li>
+				</ul>
+        
+        <a href="https://play.google.com/store/apps/details?id=org.missmonacoin.monya"><img src="https://play.google.com/intl/ja/badges/images/generic/ja_badge_web_generic.png" alt="Google Play" style="height:80px"></a>
+        <a href="https://itunes.apple.com/jp/app/%E3%82%82%E3%81%AB%E3%82%83/id1343780009"><img src="assets/images/home.png" alt="Apple is worst" style="height:60px;margin:10px"></a>
+			</div>
+			<div class="image phone"><div class="inner"><img src="assets/images/screenshot/first.png" alt=""></div></div>
+		</header>
 
 
+		<!-- Two -->
+		<section id="two" class="wrapper">
+			<div class="inner alt">
+				<section class="spotlight">
+					<div class="image"><img src="assets/images/screenshot/easy.png" alt=""></div>
+					<div class="content">
+						<h3>Easy operation</h3>
+						<p>Represent the elements of an arbitrary crypto currency as easily as possible <br>
+              You don't have to show personal information such as e-mail address and telephone number</p>
+					</div>
+				</section>
+				<section class="spotlight">
+					<div class="image"><img src="assets/images/screenshot/coins.png" alt=""></div>
+					<div class="content">
+						<h3>Multiple currency</h3>
+						<p>Compatible with a wide range of currencies <br>
+              You can manage not only crypto but also legal tender <br>
+              You can even add it yourself, you can customize variously <br></p>
+					</div>
+				</section>
+				<section class="spotlight">
+					<div class="image"><img src="assets/images/screenshot/secure.png" alt=""></div>
+					<div class="content">
+						<h3>Security focused</h3>
+						<p>Private key for crypto currency management is held only in your terminal, security is much higher than online wallet <br>
+              Enhanced backup method, easy <br>
+              BIP 44 HD Wallet compatible <br>
+              Completely open source</p>
+					</div>
+				</section>
+        <section class="spotlight">
+					<div class="image"><img src="assets/images/screenshot/swap.png" alt=""></div>
+					<div class="content">
+						<h3>Block chain</h3>
+						<p>Support for atomic swap <br>
+              Messages can be written to the block chain</p>
+					</div>
+				</section>
+				<section class="special">
+					<ul class="icons labeled">
+						<li><span class="icon fa-exchange"><span class="label">Atomic swap</span></span></li>
+						<li><span class="icon fa-shopping-cart"><span class="label">Zaif Payment compatible</span></span></li>
+						<li><span class="icon fa-desktop"><span class="label">Cross platform</span></span></li>
+					</ul>
+				</section>
+			</div>
+		</section>
 
-    <!-- Start main content -->
 
-    <main role="main">
+		<section id="three" class="wrapper">
+			<div class="inner">
 
-      <!-- Start Feature -->
-      <section id="mu-feature">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="mu-feature-area">
-
-                <div class="mu-title-area">
-                  <h2 class="mu-title">Feature</h2>
-                  <span class="mu-title-dot"></span>
-                  <p>Monacoin, BitZeny compatible,crypto currency Wallet satisfying from beginner to advanced</p>
-                </div>
-
-                <!-- Start Feature Content -->
-                <div class="mu-feature-content">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="mu-feature-content-left">
-                        <img class="mu-profile-img" src="https://monya-wallet.github.io/assets/images/iphone-group.png" alt="iphone Image">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="mu-feature-content-right">
-
-                        <!-- Start single feature item -->
-                        <div class="media">
-                          <div class="media-left">
-                            <button class="btn mu-feature-btn" type="button"></button>
-                          </div>
-                          <div class="media-body">
-                            <h3 class="media-heading">Easy operation</h3>
-                            <p>
-                              <div>Represent the elements of an arbitrary crypto currency as easily as possible
-                              </div>
-                              <div>You don't have to show personal information such as e-mail address and telephone number</div>
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End single feature item -->
-
-                        <!-- Start single feature item -->
-                        <div class="media">
-                          <div class="media-left">
-                            <button class="btn mu-feature-btn" type="button"></button>
-                          </div>
-                          <div class="media-body">
-                            <h3 class="media-heading">Multiple currency</h3>
-                            <p>
-                              <div>Supports a wide range of currencies including not only Monacoin but also Bitcoin, BitZeny</div>
-                              <div>Also supports SegWit latest function</div>
-                              <div>Also supports Monaparty, Counterparty currency</div>
-                              <div>You can even add it yourself, you can customize variously</div>
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End single feature item -->
-
-                        <!-- Start single feature item -->
-                        <div class="media">
-                          <div class="media-left">
-                            <button class="btn mu-feature-btn" type="button"></button>
-                          </div>
-                          <div class="media-body">
-                            <h3 class="media-heading">Security focused</h3>
-                            <p>
-                              <div>Private key for crypto currency management is held only in your terminal, security is much higher than online wallet
-                              </div>
-                              <div>Enhanced backup method, easy
-                              </div>
-                              <div>BIP 44 HD Wallet compatible
-                              </div>
-                              <div>Completely open source</div>
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End single feature item -->
-
-                        <!-- Start single feature item -->
-                        <div class="media">
-                          <div class="media-left">
-                            <button class="btn mu-feature-btn" type="button"></button>
-                          </div>
-                          <div class="media-body">
-                            <h3 class="media-heading">Maximize the power of the block chain</h3>
-                            <p>
-                              <div>Atomic Swap available</div>
-                              <div>You can read and write blocks chain messages</div>
-                            </p>
-                          </div>
-                        </div>
-                        <!-- End single feature item -->
-
-                        <!-- Start single feature item -->
-                        <div class="media">
-                          <div class="media-left">
-                            <button class="btn mu-feature-btn" type="button"></button>
-                          </div>
-                          <div class="media-body">
-                            <h3 class="media-heading">It can also be used as a means of settlement</h3>
-                            <p>
-                              <div>Issuing Zaif Payment's invoice</div>
-                              <div>You can refer and it is good for encryption currency settlement application
-                              </div>
-                              <div>Monappy 's remittance It is easy to receive Monappy with QR issue function!
-                              </div>
-                              <div>Zaif with health meter</div>
-                            </p>
-                          </div>
-                        </div>
-                        <div>* Various functions are restricted in the iOS version</div>
-                        <!-- End single feature item -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Feature Content -->
-
-              </div>
+				<header class="major">
+					<h2>Corresponding currency</h2>
+				</header>
+        <div class="currencies">
+          
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/btc.png">
+              <div class="name">Bitcoin</div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- End Feature -->
-
-
-      <section id="mu-video">
-        <div class="mu-video-overlay">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="mu-video-area">
-                  <h2>Currencies</h2>
-                  <div class="currencies">
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/mona.png">
-                        <div class="name">Monacoin</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/btc.png">
-                        <div class="name">Bitcoin</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/zny.png">
-                        <div class="name">BitZeny</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/fjc.png">
-                        <div class="name">Fujicoin</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/ltc.png">
-                        <div class="name">Litecoin</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/xmp.png">
-                        <div class="name">MonaParty (Monacard)</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/xcp.png">
-                        <div class="name">Counterparty</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/bch.png">
-                        <div class="name">Bitcoin Cash</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/koto.png">
-                        <div class="name">Koto</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/dash.png">
-                        <div class="name">Dash</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/zec.png">
-                        <div class="name">Zcash</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/neet.png">
-                        <div class="name">NEETCOIN</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/nem.png">
-                        <div class="name">NEM</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="https://monya-wallet.github.io/assets/images/coins/ecob.png">
-                        <div class="name">EcoBit</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="assets/images/coins/lc/jpy.png" />
-                        <div class="name">Japanese Yen,etc(LCNEM)</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="assets/images/coins/xrp.png" />
-                        <div class="name">Ripple</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="assets/images/coins/btcsw.png" />
-                        <div class="name">Bitcoin(SegWit)</div>
-                      </div>
-                    </div>
-                    <div class="cur">
-                      <div class="icon">
-                        <img alt="" src="assets/images/coins/yaju.png" />
-                        <div class="name">Yajucoin</div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-                Some of these coins needs to be explicitly enabled.
-              </div>
+          
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/eth.png">
+              <div class="name">Ethereum</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/xcp.png">
+              <div class="name">Counterparty</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/nem.png">
+              <div class="name">NEM</div>
+            </div>
+          </div>
+           <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/xrp.png">
+              <div class="name">XRP</div>
+            </div>
+           </div>
+           <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/yaju.png">
+              <div class="name">Yajucoin</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/mona.png">
+              <div class="name">Monacoin</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/xmp.png">
+              <div class="name">Monaparty (Monacard)</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/zrx.png">
+              <div class="name">0x</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/omg.png">
+              <div class="name">OmiseGO</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/rep.png">
+              <div class="name">Augur</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/gnt.png">
+              <div class="name">Golem</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/ae.png">
+              <div class="name">Aeternity</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/zny.png">
+              <div class="name">BitZeny</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/fjc.png">
+              <div class="name">Fujicoin</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/ltc.png">
+              <div class="name">Litecoin</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/bch.png">
+              <div class="name">Bitcoin Cash</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/koto.png">
+              <div class="name">Koto</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/dash.png">
+              <div class="name">DASH</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/zec.png">
+              <div class="name">Zcash</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/neet.png">
+              <div class="name">NEETCOIN</div>
+            </div>
+          </div>
+          
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/ecob.png">
+              <div class="name">EcoBit</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/lc/jpy.png">
+              <div class="name">Japanese yen etc.</div>
+            </div>
+          </div>
+         
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/btcsw.png">
+              <div class="name">Bitcoin (SegWit)</div>
+            </div>
+          </div>
+          
+          
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/etc.png">
+              <div class="name">Ethereum Classic</div>
+            </div>
+          </div>
+          <div class="cur">
+            <div class="icon">
+              <img alt="" src="assets/images/coins/nuko.png">
+              <div class="name">Nekonium</div>
             </div>
           </div>
         </div>
-      </section>
+        
+        
+        <style>.cur {
+  display: inline-block;
+  margin: 20px;
+}
+.icon {
+  text-align: center;
+}
+.icon .name {
+  color: black;
+}
+.icon img {
+  width: 96px;
+  height: 96px;
+}
+</style>
 
 
-      <!-- Start Apps Screenshot -->
-      <section id="mu-apps-screenshot">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="mu-apps-screenshot-area">
+    </div></section>
+    <section id="four" class="wrapper style2 special">
+	    <header class="major">
+		    <h2>download</h2>
+	    </header>
+	    <ul class="actions special">
+        <li><a href="https://monya-wallet.github.io/wallet/" class="button primary icon fa-arrow-right">Use it now</a></li>
+		    <li><a href="https://github.com/monya-wallet/monya" class="button">Source code</a></li>
+        <li><a href="https://chrome.google.com/webstore/detail/%E3%82%82%E3%81%AB%E3%82%83/lgiengglndmdhgdbdcknhgjnbefhnkio" class="button icon fa-chrome">Chrome</a></li>
+        <li><a href="https://monya-wallet.github.io/dev/" class="button">Development version</a></li>
+	    </ul>
+      <a href="https://play.google.com/store/apps/details?id=org.missmonacoin.monya"><img src="https://play.google.com/intl/ja/badges/images/generic/ja_badge_web_generic.png" alt="Google Play" style="height:80px"></a>
+      <a href="https://itunes.apple.com/jp/app/%E3%82%82%E3%81%AB%E3%82%83/id1343780009"><img src="assets/images/home.png" alt="Apple is worst" style="height:60px;margin:10px"></a>
+    </section>
 
-                <div class="mu-title-area">
-                  <h2 class="mu-title">Screenshots</h2>
-                  <span class="mu-title-dot"></span>
-
-                </div>
-
-
-                <!-- Start Apps Screenshot Content -->
-                <div class="mu-apps-screenshot-content">
-
-                  <div class="mu-apps-screenshot-slider" style=" height: 500px;">
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/01.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/02.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/03.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/04.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/05.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/01.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/02.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/03.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/04.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/05.jpg" alt="App screenshot img">
-                    </div>
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/06.jpg" alt="App screenshot img">
-                    </div>
-
-                    <div class="mu-single-screeshot">
-                      <img src="assets/images/screenshot/07.jpg" alt="App screenshot img">
-                    </div>
-
-                  </div>
-
-                </div>
-                <!-- End Apps Screenshot Content -->
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Apps Screenshot -->
-
-      <!-- Start Download -->
-      <section id="mu-download">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="mu-download-area">
-
-                <div class="mu-title-area">
-                  <h2 class="mu-title">Get an app</h2>
-                  <span class="mu-title-dot"></span>
-                  <p></p>
-                </div>
-
-
-                <div class="mu-download-content">
-                  <a class="mu-web-btn" href="https://monya-wallet.github.io/wallet/"><i class="fa fa-globe"></i> <span>Browser version</span></a> <a class="mu-src-btn" href="https://github.com/monya-wallet/monya"><i class="fa fa-github"></i> <span>Source code</span></a> <a class="mu-apple-btn" href="https://monya-wallet.github.io/#" onclick="iosAlert()"><i class="fa fa-apple"></i> <span>app store</span></a> <a class="mu-google-btn" href="https://play.google.com/store/apps/details?id=org.missmonacoin.monya"><i class="fa fa-android"></i> <span>google play</span></a>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Download -->
-
-      <!-- Start FAQ -->
-      <section id="mu-faq">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="mu-faq-area">
-
-                <div class="mu-title-area">
-                  <h2 class="mu-title">FAQ</h2>
-                  <span class="mu-title-dot"></span>
-                </div>
-
-
-                <div class="mu-faq-content">
-
-                  <div class="panel-group" id="accordion">
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a href="https://monya-wallet.github.io/#collapseOne" data-toggle="collapse" data-parent="#accordion" aria-expanded="true">
-                            <span class="fa fa-minus"></span> What is "Monya"?
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          Monacoin, BitZeny compatible,crypto currency Wallet satisfying from beginner to advanced
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a href="https://monya-wallet.github.io/#collapseTwo" data-toggle="collapse" data-parent="#accordion">
-                            <span class="fa fa-plus"></span> How do I initialize?
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          Just open the app, answer the question, just follow the instructions!It can be started easily.
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a href="https://monya-wallet.github.io/#collapseThree" data-toggle="collapse" data-parent="#accordion">
-                            <span class="fa fa-plus"></span> Please tell me how to use currency such as BitZeny.
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseThree" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          Settings → Add a coin → Check the currency you want to use → Enter the password → Wait until the screen changes
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a href="https://monya-wallet.github.io/#collapseFour" data-toggle="collapse" data-parent="#accordion">
-                            <span class="fa fa-plus"></span> I lost my secret key, it was stolen.
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseFour" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          It is the responsibility of the user.We can not reissue my lost secret key.Also, if the secret key is stolen and the coin is stolen you need to solve it yourself.
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a href="https://monya-wallet.github.io/#collapseFive" data-toggle="collapse" data-parent="#accordion">
-                            <span class="fa fa-plus"></span> Well I do not know.help me
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseFive" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          You may be able to help with posting hash tags #もにゃ on Twitter as well.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End FAQ -->
-
-
-      <!-- Start Contact -->
-      <section id="mu-contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="mu-contact-area">
-
-                <div class="mu-title-area">
-                  <h2 class="mu-heading-title">Contact</h2>
-                  <span class="mu-title-dot"></span>
-                </div>
-
-                <div class="mu-contact-content">
-                  <h4>For inquiries to GitHub Issues or Twitter</h4>
-                  <a href="https://github.com/monya-wallet/monya"><i class="fa fa-github"></i> <span>GitHub</span></a> <a href="https://twitter.com/monya_wallet"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Contact -->
-
-      <section id="mu-social-media">
-
-
-        <a href="https://twitter.com/monya_wallet">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="https://github.com/monya-wallet/monya">
-          <i class="fa fa-github"></i>
-        </a>
-
-      </section>
-
-    </main>
-
-    <!-- End main content -->
-
-
-    <!-- Start footer -->
-    <footer id="mu-footer" role="contentinfo">
-      <div class="container">
-        <div class="mu-footer-area">
-          <p class="mu-copy-right">Template By <a rel="nofollow" href="http://markups.io/project/apex-app/">markups.io</a>
-          </p>
-        </div>
-      </div>
-
+    <!-- Footer -->
+    <footer id="footer">
+	    <ul class="icons">
+		    <li><a href="https://github.com/monya-wallet/monya" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		    <li><a href="https://twitter.com/monya_wallet" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="https://discord.gg/cttg966"><span class="label">Discord</span></a></li>
+	    </ul>
+	    <p class="copyright">© Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
     </footer>
-    <!-- End footer -->
 
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- Bootstrap -->
-    <script src="https://monya-wallet.github.io/assets/js/bootstrap.min.js"></script>
-    <!-- Slick slider -->
-    <script type="text/javascript" src="https://monya-wallet.github.io/assets/js/slick.min.js"></script>
-    <!-- Ajax contact form  -->
-    <script type="text/javascript" src="https://monya-wallet.github.io/assets/js/app.js"></script>
-    <!-- Custom js -->
-    <script type="text/javascript" src="https://monya-wallet.github.io/assets/js/custom.js"></script>
   </body>
 </html>
